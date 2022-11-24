@@ -1,0 +1,54 @@
+; Copyright (c) Microsoft Corporation
+
+[Version]
+Signature="$Windows NT$"
+Provider="Microsoft"
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=prnSendToOneNote.cat
+DriverVer=11/29/2016, 16.0.7629.4000
+ClassVer=4.0
+
+[Manufacturer]
+"Microsoft"=Microsoft,NTx86,NTamd64,NTarm
+
+[Microsoft.NTx86]
+"Send to Microsoft OneNote 16 Driver" = OneNotePrintDriver_Install,{3EE39114-30B4-45a4-A109-19D4A40FCC22}
+
+[Microsoft.NTamd64]
+"Send to Microsoft OneNote 16 Driver" = OneNotePrintDriver_Install,{3EE39114-30B4-45a4-A109-19D4A40FCC22}
+
+[Microsoft.NTarm]
+"Send to Microsoft OneNote 16 Driver" = OneNotePrintDriver_Install,{3EE39114-30B4-45a4-A109-19D4A40FCC22}
+
+[OneNotePrintDriver_Install]
+CopyFiles=OneNotePrintDriver_Files
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[OneNotePrintDriver_Files]
+SendToOneNote.gpd
+SendToOneNote-pipelineconfig.xml
+SendToOneNote-manifest.ini
+SendToOneNoteNames.gpd
+SendToOneNoteFilter.dll
+
+[SourceDisksNames.x86]
+1 = %Location%,,
+
+[SourceDisksNames.amd64]
+1 = %Location%,,
+
+[SourceDisksNames.Arm]
+1 = %Location%,,
+
+[SourceDisksFiles]
+SendToOneNote.gpd                = 1
+SendToOneNote-pipelineconfig.xml = 1
+SendToOneNote-manifest.ini       = 1
+SendToOneNoteNames.gpd           = 1
+SendToOneNoteFilter.dll          = 1
+
+[Strings]
+Location="Microsoft Office Send To OneNote Print Driver Location"

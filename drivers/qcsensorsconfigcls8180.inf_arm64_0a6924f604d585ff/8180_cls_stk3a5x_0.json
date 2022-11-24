@@ -1,0 +1,106 @@
+{
+  "config":{
+    "hw_platform": ["CLS"],
+    "soc_id": ["340"]
+  },
+  "stk3a5x_0_platform":{
+    "owner": "sns_stk3a5x",
+    ".config":{
+      "owner": "sns_stk3a5x",
+      "bus_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "bus_instance":{ "type": "int", "ver": "0",
+        "data": "3"
+      },
+      "slave_config":{ "type": "int", "ver": "0",
+        "data": "70"
+      },
+      "min_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "max_bus_speed_khz":{ "type": "int", "ver": "0",
+        "data": "400"
+      },
+      "reg_addr_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "dri_irq_num":{ "type": "int", "ver": "0",
+        "data": "27"
+      },
+      "irq_pull_type":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_is_chip_pin":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "irq_drive_strength":{ "type": "int", "ver": "0",
+        "data": "0"
+      },
+      "irq_trigger_type":{ "type": "int", "ver": "0",
+        "data": "1"
+      },
+      "num_rail":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "rail_on_state":{ "type": "int", "ver": "0",
+        "data": "2"
+      },
+      "vdd_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vdd"
+      },
+      "vddio_rail":{ "type": "str", "ver": "0",
+        "data": "/pmic/client/sensor_vddio"
+      },
+      "rigid_body_type":{ "type": "int", "ver": "0",
+      "data": "0"
+      }
+    },
+	".als":{
+      "owner": "sns_stk3a5x",
+      ".fac_cal":{
+        "owner": "sns_stk3a5x",
+        "scale":{ "type": "flt", "ver": "0",
+          "data": "1.0"
+        },
+        "BB bias":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "ALS_Other1":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "ALS_Other2":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        },
+        "ALS_Other3":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+		
+      }
+    },
+    ".ps":{
+      "owner": "sns_stk3a5x",
+      ".fac_cal":{
+        "owner": "sns_stk3a5x",
+        "near_threshold":{ "type": "flt", "ver": "0",
+          "data": "12000.0"
+        },
+        "far_threshold":{ "type": "flt", "ver": "0",
+          "data": "10000.0"
+        },
+        "PS_G3cm":{ "type": "flt", "ver": "0",
+          "data": "10000.0"
+        },		
+        "ht_n_ct":{ "type": "flt", "ver": "0",
+          "data": "350.0"
+        },
+        "lt_n_ct":{ "type": "flt", "ver": "0",
+          "data": "300.0"
+        },
+        "data_ct":{ "type": "flt", "ver": "0",
+          "data": "0.0"
+        }
+      }
+    }
+  }
+}

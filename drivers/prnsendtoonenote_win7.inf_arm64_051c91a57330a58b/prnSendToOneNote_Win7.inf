@@ -1,0 +1,60 @@
+; Copyright (c) Microsoft Corporation
+
+[Version]
+Signature="$Windows NT$"
+Provider="Microsoft"
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=prnSendToOneNote_Win7.cat
+DriverVer=11/29/2016, 16.0.7629.4000
+
+[Manufacturer]
+"Microsoft"=Microsoft,NTx86,NTamd64
+
+[Microsoft.NTx86]
+"Send to Microsoft OneNote 16 Driver" = OneNotePrintDriver_Install,{3EE39114-30B4-45a4-A109-19D4A40FCC22} ;Guid is ContractID
+
+[Microsoft.NTamd64]
+"Send to Microsoft OneNote 16 Driver" = OneNotePrintDriver_Install,{3EE39114-30B4-45a4-A109-19D4A40FCC22} ;Guid is ContractID
+
+[OneNotePrintDriver_Install]
+CopyFiles=OneNotePrintDriver_Files
+DriverFile=mxdwdrv.dll
+ConfigFile=UniDrvUI.dll
+HelpFile=UniDrv.HLP
+DataFile=SendToOneNote.GPD
+CoreDriverSections="{D20EA372-DD35-4950-9ED8-A6335AFE79F0},UNIDRV.OEM,XPSGPD.OEM", "{D20EA372-DD35-4950-9ED8-A6335AFE79F5},XPSDRV.OEM"
+
+[PrinterPackageInstallation.x86]
+PackageAware=TRUE
+CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0}, {D20EA372-DD35-4950-9ED8-A6335AFE79F5}
+
+[PrinterPackageInstallation.amd64]
+PackageAware=TRUE
+CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0}, {D20EA372-DD35-4950-9ED8-A6335AFE79F5}
+
+[DestinationDirs]
+DefaultDestDir=66000
+
+[OneNotePrintDriver_Files]
+SendToOneNote.gpd
+SendToOneNote-pipelineconfig.xml
+SendToOneNote.ini
+SendToOneNoteNames.gpd
+SendToOneNoteFilter.dll
+
+[SourceDisksNames.x86]
+1 = %Location%,,
+
+[SourceDisksNames.amd64]
+1 = %Location%,,
+
+[SourceDisksFiles]
+SendToOneNote.gpd                = 1
+SendToOneNote-pipelineconfig.xml = 1
+SendToOneNote.ini                = 1
+SendToOneNoteNames.gpd           = 1
+SendToOneNoteFilter.dll          = 1
+
+[Strings]
+Location="Microsoft Office Send To OneNote Print Driver Location"
