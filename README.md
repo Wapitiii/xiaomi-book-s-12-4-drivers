@@ -22,4 +22,4 @@ Tutorial:
 2. Place the files on a usb stick
 3. Boot from it on your device
 
-Download (Google Drive): [Download](https://drive.google.com/file/d/1lU7KiIBuqDzOYZnMoP16PDO4Xhv38hlG/view?usp=sharing)
+Download (Google Drive): [Download](https://drive.google.com/file/d/1avynR1Rgea34JPkUz5JWfgQl9ScaMLHR/view?usp=sharing)
