@@ -1,4 +1,8 @@
 # Xiaomi Book S 12'4 drivers
+
+NOTE: I don't own this device anymore, so there won't be any updates. Recovery image and firmware downloads will still stay though.
+
+
 Drivers exported from a Xiaomi Book S 12'4
 
 Installed OS was Windows 11 22000.0
